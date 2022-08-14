@@ -1,379 +1,320 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<title>Alisson Arboleda Portfolio</title>
+    <title>Alisson Arboleda Portfolio</title>
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-	<link rel="stylesheet" href="css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-	<link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-	<script>
-		var renderPage = true;
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
 
-	if(navigator.userAgent.indexOf('MSIE')!==-1
-		|| navigator.appVersion.indexOf('Trident/') > 0){
-   		/* Microsoft Internet Explorer detected in. */
-   		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
-   		renderPage = false;
-	}
-	</script>
-</head>
 
-<body>
-	<!-- Loader -->
-	<div id="loader-wrapper">
-		<div id="loader"></div>
-		<div class="loader-section section-left"></div>
-		<div class="loader-section section-right"></div>
-	</div>
-	
-	<!-- Page Content -->
-	<div class="container-fluid tm-main">
-		<div class="row tm-main-row">
+  </head>
+  <body>
 
-			<!-- Sidebar -->
-			<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Alisson</a>
 
-				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-				<div class="inner">
-					<nav id="tmMainNav" class="tm-main-nav">
-						<ul>
-							<li>
-								<a href="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-1">
-									<i class="fa-solid fa-house-chimney tm-nav-fa-icon"></i>
-									<span>Inicio</span>
-								</a>
-							</li>
-							<li>
-								<a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_02.jpg" data-page="#tm-section-2" data-page-type="carousel">
-									<i class="fa-solid fa-folder-open tm-nav-fa-icon"></i>
-									<span>Proyectos</span>
-								</a>
-							</li>							
-							<li>
-								<a href="#company" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3">
-									<i class="fa-solid fa-screwdriver-wrench tm-nav-fa-icon"></i>
-									<span>Habilidades</span>
-								</a>
-							</li>
-							<li>
-								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
-									<i class="fas fa-comments tm-nav-fa-icon"></i>
-									<span>Contáctame</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                    </li>
+                </ul>
 
-			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
+                <ul class="navbar-nav ml-lg-auto">
+                    <div class="ml-lg-4">
+                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                        <i class="color-mode-icon"></i>
+                        Color mode
+                      </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-					<!-- section 1 -->
-					<section id="tm-section-1" class="tm-section">
-						<div class="ml-auto">
-							<header class="mb-4"><h1 class="tm-text-shadow">Constructive Design</h1></header>
-							<p class="mb-5 tm-font-big">Aenean fermentum vestibulum ipsum, ut pretium erat sodales sodales. Pellentesque quis orci vitae dui commodo sodales et ut quam. Etiam vitae egestas purus, ut malesuada enim.</p>
-							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a> 
-							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
-						</div>
-					</section>
+    <!-- ABOUT -->
+    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                    <div class="about-text">
+                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                        <h1 class="animated animated-text">
+                            <span class="mr-2">Hey folks, I'm</span>
+                                <div class="animated-info">
+                                    <span class="animated-item" style="width: 350px;">Alisson Arboleda</span>
+                                    <span class="animated-item" style="width: 350px;">DevOps Engineer</span>
+                                    <span class="animated-item" style="width: 350px;">Cloud Engineer</span>
+                                </div>
+                        </h1>
 
-					<!-- section 2 -->
-					<section id="tm-section-2" class="tm-section tm-section-carousel">
-						<div>
-							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>		            
-							<div class="tm-img-container">
-								<div class="tm-img-slider">
-									<a href="img/gallery-img-01.jpg" class="tm-slider-img"><img src="img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-02.jpg" class="tm-slider-img"><img src="img/gallery-img-02-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-03.jpg" class="tm-slider-img"><img src="img/gallery-img-03-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-04.jpg" class="tm-slider-img"><img src="img/gallery-img-04-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-05.jpg" class="tm-slider-img"><img src="img/gallery-img-05-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="img/gallery-img-06.jpg" class="tm-slider-img"><img src="img/gallery-img-06-tn.jpg" alt="Image" class="img-fluid"></a>
-								</div>
-							</div>		            		          
-						</div>       		          	
-					</section>
+                        <p>Since I started this journey I have cultivated a great interest in web development and it operations, over time this interest turned into a passion for cloud computing. I have been building hands-on real life projects which gave me the necessary knowledge and skills to get my first AWS certificate.
+                          I’m now looking for a junior Cloud/DevOps position to finally kick start my career and learn among professionals.</p>
+                        
+                        <div class="custom-btn-group mt-4">
+                          <a href="https://drive.google.com/file/d/15YqbZQx9QWjUyfGZALj6vzW_AVXMIWpZ/view?usp=sharing" target="_blank" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <!-- <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a> -->
+                        </div>
+                    </div>
+                </div>
 
-					<!-- section 3 -->
-					<section id="tm-section-3" class="tm-section">						
-						<div class="row mb-4">
-							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Company</h2></header>		
-						</div>
-						<div class="row">
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-apple tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>HTML Templates</h3>
-										<p>We provide a variety of templates for you at no cost. Please spread a word about <a href="https://plus.google.com/+tooplate" target="_parent">Tooplate</a> website. Thank you.</p>	
-									</div>
-								</div>
-							</div>	
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fas fa-map-pin mr-4 tm-icon-circled tm-icon-media"></i>	
-									<div class="media-body">
-										<h3>Free Images</h3>
-										<p>Photos by <a href="https://unsplash.com" target="_blank">Unsplash.com</a> website, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-fly mr-4 tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>Phasellus eleifend</h3>
-										<p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>		
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-linode mr-4 tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>Phasellus eleifend</h3>
-										<p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
-									</div>
-								</div>
-							</div>			          		
-						</div>						               
-					</section>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="about-image svg">
+                        <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                    </div>
+                </div>
 
-					<!-- section 4 -->
-					<section id="tm-section-4" class="tm-section">
-						<div class="tm-bg-transparent-black tm-contact-box-pad">
-							<div class="row mb-4">
-								<div class="col-sm-12">
-									<header><h2 class="tm-text-shadow">Contact Us</h2></header>
-								</div>
-							</div>
-							<div class="row tm-page-4-content">
-								<div class="col-md-6 col-sm-12 tm-contact-col">
-									<div class="contact_message">
-										<form action="#contact" method="post" class="contact-form">
-											<div class="form-group">
-												<input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required="">
-											</div>
-											<div class="form-group">
-												<input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required="">
-											</div>
-											<div class="form-group">
-												<textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required=""></textarea>
-											</div>
-											<button type="submit" class="btn tm-btn-submit tm-btn ml-auto">Submit</button>
-										</form>
-									</div>
-								</div>
-								<div class="col-md-6 col-sm-12 tm-contact-col">
-									<div class="tm-address-box">
-										<p>Aliquam interdum, nisl sedd faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendisse a dictum tortor.</p>
-										<p>Curabitur venenatis leo in augue convallis, vulputate sollicitudin ex maximus.</p>
-										<address>
-											120-240 Aliquam nec neque augue<br>
-											Suspendisse tincidunt nunc,<br>
-											vitae sagis justo 11000
-										</address>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>					
-				</div>	<!-- .tm-content -->							
-				<footer class="footer-link">
-					
-				</footer>
-			</div>	<!-- row -->			
-		</div>
-		<div id="preload-01"></div>
-		<div id="preload-02"></div>
-		<div id="preload-03"></div>
-		<div id="preload-04"></div>
+            </div>
+        </div>
+    </section>
 
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-		<script type="text/javascript" src="slick/slick.min.js"></script> <!-- Slick Carousel -->
+    <!-- PROJECTS -->
+    <section class="project py-5" id="project">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12">
 
-		<script>
+                      <div class="col-lg-8 mx-auto">
+                        <h2>Things I have learned through hands-on experience</h2>
+                      </div>
 
-		var sidebarVisible = false;
-		var currentPageID = "#tm-section-1";
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image01.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
 
-		// Setup Carousel
-		function setupCarousel() {
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image02.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
 
-			// If current page isn't Carousel page, don't do anything.
-			if($('#tm-section-2').css('display') == "none") {
-			}
-			else {	// If current page is Carousel page, set up the Carousel.
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image03.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
 
-				var slider = $('.tm-img-slider');
-				var windowWidth = $(window).width();
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image04.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
 
-				if (slider.hasClass('slick-initialized')) {
-					slider.slick('destroy');
-				}
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="images/project/project-image05.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                      </div>
 
-				if(windowWidth < 640) {
-					slider.slick({
-	              		dots: true,
-	              		infinite: false,
-	              		slidesToShow: 1,
-	              		slidesToScroll: 1
-	              	});
-				}
-				else if(windowWidth < 992) {
-					slider.slick({
-	              		dots: true,
-	              		infinite: false,
-	              		slidesToShow: 2,
-	              		slidesToScroll: 1
-	              	});
-				}
-				else {
-					// Slick carousel
-	              	slider.slick({
-	              		dots: true,
-	              		infinite: false,
-	              		slidesToShow: 3,
-	              		slidesToScroll: 2
-	              	});
-				}
+                  </div>
+                </div>
+        </div>
+    </section>
 
-				// Init Magnific Popup
-				$('.tm-img-slider').magnificPopup({
-				  delegate: 'a', // child items selector, by clicking on it popup will open
-				  type: 'image',
-				  gallery: {enabled:true}
-				  // other options
-				});
-      		}
-  		}
+    <!-- FEATURES -->
+    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+        <div class="container">
+            <div class="row">
 
-  		// Setup Nav
-  		function setupNav() {
-  			// Add Event Listener to each Nav item
-	     	$(".tm-main-nav a").click(function(e){
-	     		e.preventDefault();
-		    	
-		    	var currentNavItem = $(this);
-		    	changePage(currentNavItem);
-		    	
-		    	setupCarousel();
-		    	setupFooter();
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4">Experiences</h2>
 
-		    	// Hide the nav on mobile
-		    	$("#tmSideBar").removeClass("show");
-		    });	    
-  		}
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2019</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Project Manager</span><small>Best Studio</small></h3>
+                                  <p>Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam laoreet libero ac pharetra feugiat. Cras ac fermentum nunc, a faucibus nunc.</p>
+                             </div>
+                        </div>
 
-  		function changePage(currentNavItem) {
-  			// Update Nav items
-  			$(".tm-main-nav a").removeClass("active");
-     		currentNavItem.addClass("active");
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2018</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UX Designer</span><small>Digital Ace</small></h3>
+                                <p>Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.</p>
+                            </div>
+                        </div>
 
-	    	$(currentPageID).hide();
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2016</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>UI Freelancer</h3>
+                                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2014</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Junior Designer<small>Crafted Co.</small></h3>
+                                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
+                            </div>
+                        </div>
 
-	    	// Show current page
-	    	currentPageID = currentNavItem.data("page");
-	    	$(currentPageID).fadeIn(1000);
+                    </div>
+                </div>
 
-	    	// Change background image
-	    	var bgImg = currentNavItem.data("bgImg");
-	    	$.backstretch("img/" + bgImg);		    	
-  		}
+                <div class="col-lg-6 col-12">
+                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
 
-  		// Setup Nav Toggle Button
-  		function setupNavToggle() {
+                    <div class="timeline">
+                        <div class="timeline-wrapper">
+                             <div class="timeline-yr">
+                                  <span>2017</span>
+                             </div>
+                             <div class="timeline-info">
+                                  <h3><span>Mobile Web</span><small>Master Design</small></h3>
+                                  <p>Please tell your friends about Tooplate website. That would be very helpful. We need your support.</p>
+                             </div>
+                        </div>
 
-			$("#tmMainNavToggle").on("click", function(){
-				$(".sidebar").toggleClass("show");
-			});
-  		}
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2015</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>User Interfaces</span><small>Creative Agency</small></h3>
+                                <p><a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a> is a great website to download HTML templates without any login or email.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                <span>2013</span>
+                            </div>
+                            <div class="timeline-info">
+                                <h3><span>Artwork Design</span><small>New Art School</small></h3>
+                                <p>You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute this template without a permission.</p>
+                            </div>
+                        </div>
 
-  		// If there is enough room, stick the footer at the bottom of page content.
-  		// If not, place it after the page content
-  		function setupFooter() {
-  			
-  			var padding = 100;
-  			var footerPadding = 40;
-  			var mainContent = $("section"+currentPageID);
-  			var mainContentHeight = mainContent.outerHeight(true);
-  			var footer = $(".footer-link");
-  			var footerHeight = footer.outerHeight(true);
-  			var totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
-  			var windowHeight = $(window).height();		
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
-  			if(totalPageHeight > windowHeight){
-  				$(".tm-content").css("margin-bottom", footerHeight + footerPadding + "px");
-  				footer.css("bottom", footerHeight + "px");  			
-  			}
-  			else {
-  				$(".tm-content").css("margin-bottom", "0");
-  				footer.css("bottom", "20px");  				
-  			}  			
-  		}
+    <!-- CONTACT -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-5 mr-lg-5 col-12">
+            <div class="google-map w-100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
 
-  		// Everything is loaded including images.
-      	$(window).on("load", function(){
+            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+                <div class="contact-info-item">
+                  <h3 class="mb-3 text-white">Say hello</h3>
+                  <p class="footer-text mb-0">010 020 0960</p>
+                  <p><a href="mailto:hello@company.co">hello@company.co</a></p>
+                </div>
 
-      		// Render the page on modern browser only.
-      		if(renderPage) {
-				// Remove loader
-		      	$('body').addClass('loaded');
+                <ul class="social-links">
+                     <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
+                     <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
+                </ul>
+            </div>
+          </div>
 
-		      	// Page transition
-		      	var allPages = $(".tm-section");
+          <div class="col-lg-6 col-12">
+            <div class="contact-form">
+              <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-		      	// Handle click of "Continue", which changes to next page
-		      	// The link contains data-nav-link attribute, which holds the nav item ID
-		      	// Nav item ID is then used to access and trigger click on the corresponding nav item
-		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
-			    
-			    if(linkToAnotherPage != null) {
-			    	
-			    	linkToAnotherPage.on("click", function(){
-			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
-			    		$("a" + navItemToHighlight).click();
-			    	});
-			    }
-		      	
-		      	// Hide all pages
-		      	allPages.hide();
+              <form action="" method="get">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+                  </div>
 
-		      	$("#tm-section-1").fadeIn();
+                  <div class="col-lg-6 col-12">
+                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                  </div>
 
-		     	// Set up background first page
-		     	var bgImg = $("#tmNavLink1").data("bgImg");
-		     	
-		     	$.backstretch("img/" + bgImg, {fade: 500});
+                  <div class="col-12">
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                  </div>
 
-		     	// Setup Carousel, Nav, and Nav Toggle
-			    setupCarousel();
-			    setupNav();
-			    setupNavToggle();
-			    setupFooter();
+                  <div class="ml-lg-auto col-lg-5 col-12">
+                    <input type="submit" class="form-control submit-btn" value="Send Button">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
 
-			    // Resize Carousel upon window resize
-			    $(window).resize(function() {
-			    	setupCarousel();
-			    	setupFooter();
-			    });
-      		}	      	
-		});
+        </div>
+      </div>
+    </section>
 
-		</script>
-	</body>
+    <!-- FOOTER -->
+     <footer class="footer py-5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                                
+                        <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
 </html>
