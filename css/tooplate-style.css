@@ -103,6 +103,11 @@ b, strong {
   color: #ffffff !important;
 }
 
+#button1 , #button2 {
+  display:inline-block;
+  /* additional code */
+  }
+
 .animated {
   position: relative;
 }
